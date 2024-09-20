@@ -1,3 +1,4 @@
+import { UserButton } from '@clerk/nextjs'
 import { MenuIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -55,6 +56,7 @@ const Navbar = async (props: Props) => {
             {
                 // WIP :
             }
+            <UserButton />
             <MenuIcon className="md:hidden" />
         </aside>
       </header>
