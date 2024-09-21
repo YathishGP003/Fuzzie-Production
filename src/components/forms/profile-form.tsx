@@ -2,6 +2,7 @@
 
 import { EditUserProfileSchema } from '@/lib/types'
 import React, { use, useEffect, useState } from 'react'
+import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
@@ -84,7 +85,3 @@ const ProfileForm = ({ user, onUpdate }: Props) => {
 }
 
 export default ProfileForm
-
-function zodResolver(EditUserProfileSchema: any): import("react-hook-form").Resolver<z.infer<any>, any> | undefined {
-    throw new Error('Function not implemented.')
-}
